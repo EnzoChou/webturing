@@ -1,42 +1,59 @@
 package com.webturing.models;
 
 public class Persona {
-	
-	private static String nome;
-	private static String cognome;
-	private static String indirizzo;
-	private static String telefono;
-	private static int eta;
-	
-	public static String getNome() {
+
+	private String nome;
+	private String cognome;
+	private String indirizzo;
+	private String telefono;
+	private int eta;
+
+	public Persona(String nome, String cognome, String indirizzo, String telefono, int eta) {
+		this.nome = nome;
+		this.cognome = cognome;
+		this.indirizzo = indirizzo;
+		this.telefono = telefono;
+		this.eta = eta;
+	}
+
+	public String getNome() {
 		return nome;
 	}
-	public static void setNome(String nome) {
-		Persona.nome = nome;
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public static String getCognome() {
+
+	public String getCognome() {
 		return cognome;
 	}
-	public static void setCognome(String cognome) {
-		Persona.cognome = cognome;
+
+	public void setCognome(String cognome) {
+		this.cognome = cognome;
 	}
-	public static String getIndirizzo() {
+
+	public String getIndirizzo() {
 		return indirizzo;
 	}
-	public static void setIndirizzo(String indirizzo) {
-		Persona.indirizzo = indirizzo;
+
+	public void setIndirizzo(String indirizzo) {
+		this.indirizzo = indirizzo;
 	}
-	public static String getTelefono() {
+
+	public String getTelefono() {
 		return telefono;
 	}
-	public static void setTelefono(String telefono) {
-		Persona.telefono = telefono;
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
 	}
-	public static int getEta() {
+
+	public int getEta() {
 		return eta;
 	}
-	public static void setEta(int eta) {
-		Persona.eta = eta;
+
+	public void setEta(int eta) {
+		this.eta = eta;
 	}
-	
+
 }
