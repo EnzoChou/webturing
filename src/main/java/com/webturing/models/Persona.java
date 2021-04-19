@@ -1,5 +1,7 @@
 package com.webturing.models;
+import javax.persistence.Entity;
 
+@Entity
 public class Persona {
 
 	private String nome;
